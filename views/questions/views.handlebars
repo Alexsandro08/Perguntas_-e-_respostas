@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card mt-5 w-75 mx-auto" id="card-view">
+        <div class="card-header">
+            <h3>{{questions.dataValues.title}}</h3>
+        </div>
+    <div class="card-body">
+        <p>{{questions.dataValues.body}}</p>
+
+    </div>
+    </div>
+
+       <form action="/response" method="post">
+    
+            <textarea name="body" id="response" cols="30" rows="10" class="form-control mt-3 w-50 " placeholder="type your answera!" required></textarea>
+            
+            <input type="hidden" name="question" value={{questions.dataValues.id}}>
+
+            <button type="submit" class="btn btn-success" id="btn-response">To respond</button>
+
+            <h3 class="text-success">Answers</h3>
+
+            <hr>
+
+       </form>
+      
+
+</div>
+
+   {{#each response}}
+        <div class="card w-75 mx-auto" id="card-response">
+           <div class="card-body">
+               {{dataValues.body}}
+            </div> 
+        </div>
+
+ {{/each}}

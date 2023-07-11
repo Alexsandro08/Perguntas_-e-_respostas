@@ -1,0 +1,23 @@
+   
+    <h1 class="text-center mt-5 text-success">Main questions</h1>
+                    <hr class="w-50 mx-auto">
+   
+
+{{#each questions}}
+
+      
+
+        <div class="card w-50 " id="card">
+              <a href="/questions/{{id}}" id="card-link">
+                  <h5 class="text-success">{{title}}</h5>
+              </a>
+          <a href="/questions/{{id}}" class="btn btn-outline-success" id="btn-res">To respond</a>
+        </div>
+
+      
+
+
+{{/each}}
+
+
+

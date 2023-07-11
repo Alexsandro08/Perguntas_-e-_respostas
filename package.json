@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "mysql2": "^3.4.3",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.32.1"
+  },
+  "name": "queryquest",
+  "version": "1.0.0",
+  "description": "meu projeto node com mysql",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Alexsandro",
+  "license": "MIT"
+}
