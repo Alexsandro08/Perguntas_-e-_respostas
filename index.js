@@ -8,6 +8,9 @@ const Question = require('./db/questions')
 const Response = require('./db/response');
 const Sequelize = require('sequelize')
 const Op = Sequelize.Op
+require('dotenv').config()
+
+
 
 
 //Handlebars
